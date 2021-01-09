@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Vazir;
+    src: url(https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v26.0.2/dist/font-face.css);
+}
+
+:not(i) {
+    font-family: Vazir !important;
+}
+

@@ -1,0 +1,51 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template theme_moove/footer
+
+    Footer template
+
+    Example context (json): {}
+}}
+<div id="top-footer">
+  <div class="container-fluid">
+    <div class="row">
+          <!-- {{{ output.standard_footer_html }}} -->
+    </div>
+  </div>
+</div>
+
+{{^disablebottomfooter}}
+  <footer id="page-footer" class="p-y-1-footer" style="height: 50px;padding: 10px;">
+      <div class="container-fluid">
+          <div id="course-footer">{{{ output.course_footer }}}</div>
+
+          <!-- <div class="madewithmoodle">
+              <p>بلوپرینت</p>
+              <a href="https://blueprintco.ir"><img src="http://s15.picofile.com/file/8409000318/final.png" style="width: 64px;height: 64px;" alt="Blueprint logo"></a>
+          </div> -->
+
+          <div class="madeby" style="">
+              <p style="display: inline;">02166415275 - 02177477549 - 09357477549</p>
+              <pre style="display: inline;">      </pre>
+              <h3 style="color: white;display: inline;">{{#str}}by, theme_moove{{/str}} <a style="text-decoration: none; color: #fff;" href="http://blueprintco.ir">BluePrint</a><img src="http://s15.picofile.com/file/8408703950/final.png" hspace=10px height=30px width=30px> </h3>
+          </div>
+      </div>
+  </footer>
+{{/disablebottomfooter}}
+
+{{{ output.standard_end_of_body_html }}}
